@@ -14,21 +14,6 @@ typedef enum {
 
 @interface UIView (Helpers)
 
-/*
- * Method to remove all subviews
- */
--(void) removeAllSubviews;
--(void) removeAllSubviewsExceptSubview:(UIView*)subview;
-
-- (UIView*)descendantOrSelfWithClass:(Class)cls;
-
-////CUSTOM ANIMATIONS////////////////////
-/**
- * Shortcut methods for flipping a UIView into another UIView
- */
-+ (void)flipFromView:(UIView *)fromView toView:(UIView *)toView duration:(NSTimeInterval)duration;
-+ (void)flipFromView:(UIView *)fromView toView:(UIView *)toView withType:(UIViewFlipAnimationType)animationType duration:(NSTimeInterval)duration;
-
 /////FRAME SHORTCUTS//////////////////////
 /**
  * Shortcut for frame.origin.x.
